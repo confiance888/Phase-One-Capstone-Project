@@ -15,9 +15,16 @@ public class Enrollment {
         this.grade = grade;
     }
 
-    public int getStudentId() { return studentId; }
-    public int getCourseId() { return courseId; }
-    public double getGrade() { return grade; }
+    public int getStudentId() {
+        return studentId;
+    }
+    public int getCourseId() {
+        return courseId;
+    }
+    public double getGrade() {
+
+        return grade;
+    }
 
     @Override
     public String toString() {

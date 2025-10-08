@@ -20,10 +20,10 @@ public class StudentDAOImpl implements StudentDAO {
             stmt.setString(2, student.getEmail());
             stmt.setString(3, student.getType());
             stmt.executeUpdate();
-            System.out.println("✅ Student added successfully");
+            System.out.println(" Student added successfully");
 
         } catch (SQLException e) {
-            System.err.println("❌ Error adding student: " + e.getMessage());
+            System.err.println(" Error adding student: " + e.getMessage());
         }
     }
 
@@ -44,7 +44,7 @@ public class StudentDAOImpl implements StudentDAO {
                 ));
             }
         } catch (SQLException e) {
-            System.err.println("❌ Error fetching students: " + e.getMessage());
+            System.err.println(" Error fetching students: " + e.getMessage());
         }
         return students;
     }
@@ -57,10 +57,10 @@ public class StudentDAOImpl implements StudentDAO {
 
             stmt.setInt(1, id);
             stmt.executeUpdate();
-            System.out.println("✅ Student deleted successfully");
+            System.out.println("Student deleted successfully");
 
         } catch (SQLException e) {
-            System.err.println("❌ Error deleting student: " + e.getMessage());
+            System.err.println(" Error deleting student: " + e.getMessage());
         }
     }
 }

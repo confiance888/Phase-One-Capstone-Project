@@ -25,10 +25,10 @@ public class EnrollmentDetails {
 
     @Override
     public String toString() {
-        return "EnrollmentDetails{" +
-                "studentName='" + studentName + '\'' +
-                ", courseName='" + courseName + '\'' +
-                ", grade=" + grade +
-                '}';
+        return "EnrollmentDetails{" + "studentName='" + studentName + '\'' +", courseName='" + courseName + '\'' + ", grade=" + grade + '}';
+
+
+
+
     }
 }

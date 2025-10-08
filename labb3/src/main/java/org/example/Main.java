@@ -93,19 +93,18 @@ public class Main {
                     System.exit(0);
                 }
 
-                default -> System.out.println("⚠️ Invalid choice! Try again.");
+                default -> System.out.println(" Invalid choice! Try again.");
             }
         }
     }
 
-    // ----------------- Helper Methods -----------------
     private static int readInt() {
         while (true) {
             String input = scanner.nextLine().trim();
             try {
                 return Integer.parseInt(input);
             } catch (NumberFormatException e) {
-                System.out.print("⚠️ Please enter a valid integer: ");
+                System.out.print("Please enter a valid integer: ");
             }
         }
     }
@@ -116,7 +115,7 @@ public class Main {
             try {
                 return Double.parseDouble(input);
             } catch (NumberFormatException e) {
-                System.out.print("⚠ Please enter a valid number: ");
+                System.out.print("Please enter a valid number: ");
             }
         }
     }

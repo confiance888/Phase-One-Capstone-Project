@@ -12,23 +12,23 @@ public class Enrollment {
     }
 
     public int getStudentId() {
+
         return studentId;
     }
 
     public int getCourseId() {
+
         return courseId;
     }
 
     public double getGrade() {
+
         return grade;
     }
 
     @Override
     public String toString() {
-        return "Enrollment{" +
-                "studentId=" + studentId +
-                ", courseId=" + courseId +
-                ", grade=" + grade +
-                '}';
+        return "Enrollment{" +"studentId=" + studentId + ", courseId=" + courseId + ", grade=" + grade + '}';
+
     }
 }

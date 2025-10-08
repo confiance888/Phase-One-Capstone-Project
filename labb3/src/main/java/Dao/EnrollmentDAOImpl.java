@@ -22,10 +22,10 @@ public class EnrollmentDAOImpl implements EnrollmentDAO {
             stmt.setInt(2, enrollment.getCourseId());
             stmt.setDouble(3, enrollment.getGrade());
             stmt.executeUpdate();
-            System.out.println("✅ Enrollment added successfully");
+            System.out.println(" Enrollment added successfully");
 
         } catch (SQLException e) {
-            System.err.println("❌ Error adding enrollment: " + e.getMessage());
+            System.err.println(" Error adding enrollment: " + e.getMessage());
         }
     }
 
@@ -40,12 +40,12 @@ public class EnrollmentDAOImpl implements EnrollmentDAO {
             stmt.setInt(3, courseId);
             int rows = stmt.executeUpdate();
             if (rows > 0)
-                System.out.println("✅ Grade updated successfully");
+                System.out.println(" Grade updated successfully");
             else
-                System.out.println("⚠️ No matching enrollment found");
+                System.out.println(" No matching enrollment found");
 
         } catch (SQLException e) {
-            System.err.println("❌ Error updating grade: " + e.getMessage());
+            System.err.println(" Error updating grade: " + e.getMessage());
         }
     }
 
@@ -71,7 +71,7 @@ public class EnrollmentDAOImpl implements EnrollmentDAO {
             }
 
         } catch (SQLException e) {
-            System.err.println("❌ Error fetching enrollments: " + e.getMessage());
+            System.err.println(" Error fetching enrollments: " + e.getMessage());
         }
 
         return list;
